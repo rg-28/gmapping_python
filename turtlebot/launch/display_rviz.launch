@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="model" default="$(find ant)/urdf/turtlebot3_burger.urdf.xacro"/>
+  <arg name="model" default="$(find turtlebot)/urdf/turtlebot3_burger.urdf.xacro"/>
   <arg name="gui" default="true" />
   <param name="robot_description" textfile="$(arg model)"/>
   <param name="use_gui" value="$(arg gui)"/>

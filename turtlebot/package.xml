@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ant</name>
+  <name>turtlebot</name>
   <version>0.0.0</version>
   <description>The autonomous navigation of a turtlebot package</description>
 

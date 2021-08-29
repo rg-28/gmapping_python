@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="model" default="$(find ant)/urdf/turtlebot3_burger.urdf.xacro" />
-  <arg name="rvizconfig" default="$(find ant)/rviz/turtlebot.rviz"/>
+  <arg name="model" default="$(find turtlebot)/urdf/turtlebot3_burger.urdf.xacro" />
+  <arg name="rvizconfig" default="$(find turtlebot)/rviz/turtlebot.rviz"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-	<arg name="world_name" value="$(find ant)/world/test_world.world"/>
+	<arg name="world_name" value="$(find turtlebot)/world/test_world.world"/>
   </include>
 
   <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />

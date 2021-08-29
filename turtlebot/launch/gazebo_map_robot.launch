@@ -3,9 +3,9 @@
 <launch>
 	<param name="/use_sim_time" value="true" />
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
-	<arg name="world_name" value="$(find ant)/world/test_world.world"/>
+	<arg name="world_name" value="$(find turtlebot)/world/test_world.world"/>
 	</include>
-	<arg name="model" default="$(find ant)/urdf/turtlebot3_burger.urdf.xacro" />
+	<arg name="model" default="$(find turtlebot)/urdf/turtlebot3_burger.urdf.xacro" />
 	<param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
 	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
 	</node>
@@ -23,5 +23,5 @@
 	args=" -d $(find turtlebot/rviz/mapping.rviz"/>
 
 	<node name="map_server" pkg="map_server" type="map_server" 
-	args="$(find ant)/maps/test_world_map.yaml" />
+	args="$(find turtlebot)/maps/test_world_map.yaml" />
 </launch>

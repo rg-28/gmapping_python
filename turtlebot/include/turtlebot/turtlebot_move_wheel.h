@@ -32,7 +32,7 @@
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
 
-#include <kobuki_msgs/SensorState.h>
+// #include <kobuki_msgs/SensorState.h>
 
 #include "turtlebot_move_wheel.h"
 
